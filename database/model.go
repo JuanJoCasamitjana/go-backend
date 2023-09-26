@@ -4,8 +4,8 @@ import (
 	"database/sql"
 )
 
-func ExecuteCommand(db *sql.DB, command string) error {
-	_, err := db.Exec(command)
+func ExecuteCommand(db *sql.DB, command string, args ...any) error {
+	_, err := db.Exec(command, args...)
 	return err
 }
 

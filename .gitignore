@@ -11,6 +11,9 @@
 #Database binaries
 *.db
 
+#API testing
+*.http
+
 # Test binary, built with `go test -c`
 *.test
 
