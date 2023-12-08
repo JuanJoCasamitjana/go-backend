@@ -17,6 +17,8 @@ func SetUpAndRun() {
 	}
 	//Initialize app
 	app := fiber.New()
+	app.Static("/assets", "static/front-end/dist/assets")
+	app.Static("/favicon.ico", "static/front-end/dist/favicon.ico")
 	routes.SetUpRoutes(app)
 	//Config
 

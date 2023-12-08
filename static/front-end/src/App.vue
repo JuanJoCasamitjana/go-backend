@@ -15,7 +15,7 @@ export default {
 </script>
 
 <template>
-  <TodoList :API_URL="LIST_URL">  </TodoList>
+  <TodoList/> 
 </template>
 
 <style scoped>

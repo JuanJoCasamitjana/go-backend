@@ -1,20 +1,18 @@
-<script>
-export default {
-    name: 'TodoItem',
-    props: {
-        todo: {
-            type: Object,
-            required: true
-        }
-    }
-}
-</script>
-
 <template>
-    <h3>{{ todo.title }}</h3>
-    <p>{{ todo.description }}</p>
-</template>
-
-<style>
-
-</style>
+    <tr>
+      <td>{{ todo.title }}</td>
+      <td>{{ todo.description }}</td>
+      <td>
+        <input type="checkbox" v-model="todo.completed" />
+      </td>
+    </tr>
+  </template>
+  
+  <script>
+  export default {
+    props: {
+      todo: Object,
+    },
+  };
+  </script>
+  

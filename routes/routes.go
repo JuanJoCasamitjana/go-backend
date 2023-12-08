@@ -7,7 +7,7 @@ import (
 )
 
 func SetUpRoutes(app *fiber.App) {
-	app.Get("/", handlers.Hello)
+	app.Get("/", handlers.SendIndex)
 	app.Get("/todos", handlers.GetAllTodos)
 	app.Get("/finished", handlers.GetCompletedAllTodos)
 	app.Get("/unfinished", handlers.GetUncompletedAllTodos)
